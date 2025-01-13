@@ -21,7 +21,7 @@ use App\Http\Controllers\CityController;
 
 Route::get('/cities', [CityController::class, 'getCitiesFromCountry']);
 
-
+// Route::get('/cities/{code}', [CityController::class, 'deleteCity'])->name('deleteCity');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
